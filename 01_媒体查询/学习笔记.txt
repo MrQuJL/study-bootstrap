@@ -1,0 +1,53 @@
+一、Bootstrap下载及引入：
+
+1. 下载地址：https://v3.bootcss.com/getting-started/
+下载用于生产环境的Bootstrap即可
+
+2. 引入Bootstrap的css,js以及jquery（jquery要在Bootstrap.min.js之前引入，因为它要依赖jquery）
+
+3. 也可以使用线上的连接（BootCDN）：
+<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- IE9以下开启下面的引用 -->
+<!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+二、Bootstrap目录结构：
+bootstrap/
+			├── css/
+			│   ├── bootstrap.css
+			│   ├── bootstrap.css.map
+			│   ├── bootstrap.min.css
+			│   ├── bootstrap.min.css.map
+			│   ├── bootstrap-theme.css
+			│   ├── bootstrap-theme.css.map
+			│   ├── bootstrap-theme.min.css
+			│   └── bootstrap-theme.min.css.map
+			├── js/
+			│   ├── bootstrap.js
+			│   └── bootstrap.min.js
+			└── fonts/
+				├── glyphicons-halflings-regular.eot
+				├── glyphicons-halflings-regular.svg
+				├── glyphicons-halflings-regular.ttf
+				├── glyphicons-halflings-regular.woff
+				└── glyphicons-halflings-regular.woff2
+
+三、
+
+
+
+
+
