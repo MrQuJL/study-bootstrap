@@ -1,3 +1,6 @@
+
+响应式--不同的屏幕尺寸有不同的样式
+
 一、Bootstrap下载及引入：
 
 1. 下载地址：https://v3.bootcss.com/getting-started/
@@ -45,7 +48,63 @@ bootstrap/
 				├── glyphicons-halflings-regular.woff
 				└── glyphicons-halflings-regular.woff2
 
-三、
+三、媒体查询
+
+1.1 link标签
+
+//当页面宽度小于480px的时候就会应用mobile.css里面的样式 适用于所有的设备
+<link rel="stylesheet" href="mobile.css" media="(max-width:480px)">
+//适用于打印机
+<link rel="stylesheet" href="mobile.css" media="print">
+
+1.2 浏览器窗口和设备宽高
+
+浏览器的宽高是页面的宽高（可变），而设备的宽高是指手机，电脑等设备的宽高（不可变）
+
+1.2.1 max-width max-device-width
+
+可视窗口的宽度  @media(max-width:480px){ ...}
+
+设备的宽度      @media(max-device-width:480px){ ...}
+
+1.2.2 max-height max-device-height
+
+可视窗口的高度  @media (max-height: 480px){ ...}
+
+设备的高度      @media (max-device-height: 480px){ ...}
+
+1.2.3 宽高比
+
+可视窗口    @media(aspect-radio: 3/2 ){ ... }       	页面的宽高比为3:2的时候
+
+
+1.2.4 设备方向
+
+landscape   水平  @media(orientation: landscape){...}  当设备方向是水平的时候（宽 > 高）
+
+portrait    垂直  @media(orientation: portrait){...}   	当设备方向是垂直的时候（宽 < 高）
+
+1.3 操作符
+
+1.3.1 and（表示与）
+
+@media screen and (max-width: 480px){...}   表示在屏幕和可视窗口小于480px设备上显示
+
+@media screen and (max-width: 767px) and (min-width: 480px){...}    表示在屏幕且最小宽度480最大宽度767像素
+
+1.3.2 or(,)表示或
+
+@media screen and (min-width: 767px) ,screen and (orientation: portrait){...} 表示都为屏幕且最小宽度为767或者屏幕方向为垂直
+
+1.3.3 not(否定)
+
+@media not screen and (min-width: 767px) 在屏幕小于767px的时候
+
+@media not screen and (min-width: 767px),screen and (min-width: 480px){...} 如果有逗号的时候not否定逗号后面的
+
+注意：在使用not的时候一定要给屏幕类型 如果不给永远返回一个假的值，因为默认是所有屏幕都可以使用的
+
+
 
 
 
