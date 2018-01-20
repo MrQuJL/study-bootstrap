@@ -104,8 +104,12 @@ portrait    垂直  @media(orientation: portrait){...}   	当设备方向是垂�
 
 注意：在使用not的时候一定要给屏幕类型 如果不给永远返回一个假的值，因为默认是所有屏幕都可以使用的
 
-
-
+响应式网站的几个阶段:
+页面宽度		.container宽度
+1200px以上		1170px(包括左右15px的padding)
+990px以上		970px(包括左右15px的padding)
+760px以上		750px(包括左右15px的padding)
+<760px			100%
 
 
 
