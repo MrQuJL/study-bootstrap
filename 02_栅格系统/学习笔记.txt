@@ -1,0 +1,199 @@
+辅助类：
+
+page-header
+
+alert alert-info
+
+container
+容器：100%
+container-fluid
+
+情景文本色：
+text-muted
+text-primary
+text-success
+text-info
+text-warning
+text-danger
+
+情景背景色：
+bg-primary
+bg-success
+bg-info
+bg-warning
+bg-danger
+
+关闭按钮
+<button type="button" class="close" aria-label="Close">
+	<span aria-hidden="true">&times;</span>
+</button>
+
+三角符号（下拉）
+<span class="caret"></span>
+
+快速浮动
+左浮动
+<div class="c1 pull-left"></div>
+右浮动
+<div class="c1 pull-right"></div>
+清除浮动
+给父级加clearfix
+
+栅格系统
+
+<div class="container">
+	<!-- 行 -->
+	<div class="row">
+		<div class="col-md-4 col-sm-6">
+			<h2 class="page-header">主体</h2>
+			<p>
+				fsdsdsdsdsdsdsdsdsssssssdfgdgsgdsgsdgdsgdsg
+				fsdsdsdsdsdsdsdsdsssssssdfgdgsgdsgsdgdsgdsg
+				fsdsdsdsdsdsdsdsdsssssssdfgdgsgdsgsdgdsgdsg
+				fsdsdsdsdsdsdsdsdsssssssdfgdgsgdsgsdgdsgdsg
+			</p>
+		</div>
+		<div class="col-md-8 col-sm-6">
+			<h2 class="page-header">侧边栏</h2>
+			<p>
+				fsdsdsdsdsdsdsdsdsssssssdfgdgsgdsgsdgdsgdsg
+				fsdsdsdsdsdsdsdsdsssssssdfgdgsgdsgsdgdsgdsg
+				fsdsdsdsdsdsdsdsdsssssssdfgdgsgdsgsdgdsgdsg
+				fsdsdsdsdsdsdsdsdsssssssdfgdgsgdsgsdgdsgdsg
+			</p>
+		</div>
+	</div>
+</div>
+
+row行
+col行
+col-md-4
+
+系统会自动分为最多12列
+xs <768
+sm >=768
+md >=992
+lg >=1200
+
+如果多于12列，多出的列将做为新的一行
+
+通常设置md
+lg通常不使用
+
+列排序和偏移
+
+列排序：(相对定位)可以用来交换位置
+col-md-push
+col-md-push-2 // 往右偏移两个栅格，不会影响后面的元素
+col-md-pull-2 // 往左拉两个栅格，不会影响后面的元素
+
+偏移(只能往右边移动，鸡肋...)margin-left实现
+col-md-offest
+col-md-offest-2 //往右移两个，会影响到后面的元素，会换行
+
+嵌套：
+容器之间可以嵌套
+换行的时候被卡住的时候
+在前面加一个标签加上clearfix类
+
+
+显示和隐藏:
+在md尺寸的时候显示:visible-md
+在xs的情况下隐藏：hidden-xs
+
+
+组件：
+
+排版
+h1~h6
+在h里面嵌套一个small标签当做该表题的副标题
+
+背景
+class="jumbotron"添加背景
+
+对齐:(text-align:center;)
+text-left
+text-center
+text-right
+text-justify
+text-nowrap
+
+列表：
+<ul class="list-inline">可以给里面的li一行显示
+	<li>text1</li>
+	<li>text1</li>
+	<li>text1</li>
+</ul>
+
+表格:
+条纹状表格
+<table class="table table-striped">
+	<tr>
+		<td>index</td>
+		<td>value</td>
+	</tr>
+	<tr>
+		<td>index</td>
+		<td>value</td>
+	</tr>
+	<tr>
+		<td>index</td>
+		<td>value</td>
+	</tr>
+</table>
+
+带边框的表格:
+table-bordered
+
+鼠标悬停
+table-hover
+
+状态类：
+给对应的tr加上以下的类就可以
+active
+success
+info
+warning
+danger
+
+表单(form-group,form-control,type一定要设置好)
+
+<form>
+	<div class="form-group">
+		<label>
+			姓名：<input class="form-control" type="text" />
+		</label>
+	</div>
+	<div class="form-group">
+		<label>
+			姓名：<input class="form-control" type="text" />
+		</label>
+	</div>
+</form>
+
+div class=checkbox
+
+btn btn-default
+btn btn-primary
+
+内联表单
+form-inline够宽就一行显示，
+不够就换行
+
+前后添加按钮：
+input-group
+input-group-addon
+input-group-addon
+
+
+单选和多选框
+
+
+下拉列表
+
+
+
+
+
+
+
