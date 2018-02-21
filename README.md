@@ -121,15 +121,15 @@ bootstrap/
 
 ### 1.2.3 宽高比
 
-> 可视窗口    @media(aspect-radio: 3/2 ){ ... }       	页面的宽高比为3:2的时候
+> 可视窗口    @media(aspect-radio: 3/2 ){ ... }           页面的宽高比为3:2的时候
 >
-> 设备的      @media(device-aspect-radio: 3/2 ){ ... }   	当设备的宽高比为3/2的时候  设备是指电脑或手机等设备的屏幕
+> 设备的      @media(device-aspect-radio: 3/2 ){ ... }       当设备的宽高比为3/2的时候  设备是指电脑或手机等设备的屏幕
 
 ### 1.2.4 设备方向
 
 > landscape   水平  media(orientation: landscape){...}  当设备方向是水平的时候
 >
-> portrait    垂直  media(orientation: portrait){...}   	当设备方向是垂直的时候
+> portrait    垂直  media(orientation: portrait){...}       当设备方向是垂直的时候
 
 ## 1.3 操作符
 
@@ -179,7 +179,7 @@ bootstrap/
 
 > .container 类用于固定宽度并支持响应式布局的容器
 >
-> .container-fluid	100% 宽度   左右内补15px
+> .container-fluid    100% 宽度   左右内补15px
 
 ```html
 <div class="container"></div>
@@ -188,7 +188,7 @@ bootstrap/
 
 #### container容器详情：
 
-​		
+​        
 
 | 页面宽度   | 左右内补            | container实际宽度 |
 | ------ | --------------- | ------------- |
@@ -304,21 +304,21 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```javascript
 <div class="container">
-	<h2 class="page-header">栅格系统基础</h2>
-	<div class="row"
-		<div class="col-md-8 col-md-push-4 "> <!--向右推4个网格-->
-			<h3>主体</h3>
-			<p class="alert alert-info">
-			This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
-			</p>
-		</div>
-	<div class="col-md-4 col-md-pull-8 "> <!--向左拉8个网格-->
-			<h3>边栏</h3>
-			<p class="alert alert-info">
-			This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
-			</p>
-		</div>
-	</div>
+    <h2 class="page-header">栅格系统基础</h2>
+    <div class="row"
+        <div class="col-md-8 col-md-push-4 "> <!--向右推4个网格-->
+            <h3>主体</h3>
+            <p class="alert alert-info">
+            This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
+            </p>
+        </div>
+        <div class="col-md-4 col-md-pull-8 "> <!--向左拉8个网格-->
+            <h3>边栏</h3>
+            <p class="alert alert-info">
+            This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
+            </p>
+        </div>
+    </div>
 </div>
 ```
 
@@ -330,21 +330,21 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```javascript
 <div class="container">
-	<h2 class="page-header">栅格系统偏移空间</h2>
-	<div class="row">
-		<div class="col-md-6 col-md-offset-2 ">
-			<h3>主体</h3>
-			<p class="alert alert-info">
-				This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
-			</p>
-		</div>
-		<div class="col-md-4"> <!--向右偏移2个网格-->
-			<h3>边栏</h3>
-			<p class="alert alert-info">
-				This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
-			</p>
-		</div>
-	</div>
+    <h2 class="page-header">栅格系统偏移空间</h2>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-2 ">
+            <h3>主体</h3>
+            <p class="alert alert-info">
+                This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
+            </p>
+        </div>
+        <div class="col-md-4"> <!--向右偏移2个网格-->
+            <h3>边栏</h3>
+            <p class="alert alert-info">
+                This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
+            </p>
+        </div>
+    </div>
 </div>
 ```
 
@@ -354,11 +354,11 @@ col-md-pull-    在中等尺寸下向左拉...网格
 >
 > 效果的区别：
 >
-> ​	1、col-md-offset-*只能向右偏移，因为实现方式就是margin-left，而push/pull因为是相对定位，既可以左偏移也可以右偏移
+> ​    1、col-md-offset-*只能向右偏移，因为实现方式就是margin-left，而push/pull因为是相对定位，既可以左偏移也可以右偏移
 >
->    	2、如果一行的偏移量+实际的宽度综合超过12，col-md-offset会换行显示，也是因为margin。而定位的pull和push则不会影响其他元素
+>        2、如果一行的偏移量+实际的宽度综合超过12，col-md-offset会换行显示，也是因为margin。而定位的pull和push则不会影响其他元素
 >
-> ​	3、从功能上来看：push和pull可以用来给元素换位置，比较灵活。
+> ​    3、从功能上来看：push和pull可以用来给元素换位置，比较灵活。
 
 ## 1.3 嵌套
 
@@ -376,54 +376,54 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```javascript
 <div class="container">
-	<h2 class="page-header">栅格系统嵌套</h2>
-	<div class="row">
-		<div class="col-md-8 ">
-			<h3>主体</h3>
-			<div class="row">
-				<div class="col-md-4">
-					<h4>区块一</h4>
-					<p class="alert alert-info">
-						This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
-						This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
-					</p>
-				</div>
-				<div class="col-md-4">
-					<h4>区块二</h4>
-					<p class="alert alert-info">
-					This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
-					</p>
-				</div>
-				<!--当一行占满以后就会换行-->
-				<div class="col-md-4">
-					<h4>区块三</h4>
-					<p class="alert alert-info">
-						This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
-					</p>
-				</div>
-				<div class="clearfix"></div>   <!--清除浮动-->
-				<div class="col-md-6">
-					<h4>区块四</h4>
-					<p class="alert alert-info">
-						This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
-					</p>
-				</div>
-				<div class="col-md-6">
-					<h4>区块五</h4>
-					<p class="alert alert-info">
-						This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
-					</p>
-				</div>
+    <h2 class="page-header">栅格系统嵌套</h2>
+    <div class="row">
+        <div class="col-md-8 ">
+            <h3>主体</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>区块一</h4>
+                    <p class="alert alert-info">
+                        This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
+                        This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h4>区块二</h4>
+                    <p class="alert alert-info">
+                    This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
+                    </p>
+                </div>
+                <!--当一行占满以后就会换行-->
+                <div class="col-md-4">
+                    <h4>区块三</h4>
+                    <p class="alert alert-info">
+                        This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
+                    </p>
+                </div>
+                <div class="clearfix"></div>   <!--清除浮动-->
+                <div class="col-md-6">
+                    <h4>区块四</h4>
+                    <p class="alert alert-info">
+                        This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <h4>区块五</h4>
+                    <p class="alert alert-info">
+                        This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
+                    </p>
+                </div>
 
-			</div>
-		</div>
-		<div class="col-md-4 ">
-			<h3>边栏</h3>
-			<p class="alert alert-info">
-				This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
-			</p>
-		</div>
-	</div>
+            </div>
+        </div>
+        <div class="col-md-4 ">
+            <h3>边栏</h3>
+            <p class="alert alert-info">
+                This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
+            </p>
+        </div>
+    </div>
 </div>
 ```
 
@@ -437,23 +437,23 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```javascript
 <div class="container">
-	<h2 class="page-header">显示与隐藏</h2>
-	<div class="row">
-		<div class="col-md-6">
-			<h3>主体</h3>
-			<h4 class="visible-sm alert alert-info">在小尺寸上显示</h4>
-			<p>
-				This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
-			</p>
-		</div>
-		<div class="col-md-6"> 
-			<h3>边栏</h3>
-			<h4 class="hidden-sm alert alert-info">在小尺寸上隐藏</h4>
-			<p>
-				This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
-			</p>
-		</div>
-	</div>
+    <h2 class="page-header">显示与隐藏</h2>
+    <div class="row">
+        <div class="col-md-6">
+            <h3>主体</h3>
+            <h4 class="visible-sm alert alert-info">在小尺寸上显示</h4>
+            <p>
+                This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
+            </p>
+        </div>
+        <div class="col-md-6"> 
+            <h3>边栏</h3>
+            <h4 class="hidden-sm alert alert-info">在小尺寸上隐藏</h4>
+            <p>
+                This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.
+            </p>
+        </div>
+    </div>
 </div>
 ```
 
@@ -471,13 +471,13 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```javascript
 <div class="container" >
-	<h2 class="page-header">h标题</h2>
-	<h1 class="h1">h1. Bootstrap heading <small>Secondary text</small></h1>
-	<h2>h2. Bootstrap heading <small>Secondary text</small></h2>
-	<h3>h3. Bootstrap heading <small>Secondary text</small></h3>
-	<h4>h4. Bootstrap heading <small>Secondary text</small></h4>
-	<h5>h5. Bootstrap heading <small>Secondary text</small></h5>
-	<h6>h6. Bootstrap heading <small>Secondary text</small></h6>
+    <h2 class="page-header">h标题</h2>
+    <h1 class="h1">h1. Bootstrap heading <small>Secondary text</small></h1>
+    <h2>h2. Bootstrap heading <small>Secondary text</small></h2>
+    <h3>h3. Bootstrap heading <small>Secondary text</small></h3>
+    <h4>h4. Bootstrap heading <small>Secondary text</small></h4>
+    <h5>h5. Bootstrap heading <small>Secondary text</small></h5>
+    <h6>h6. Bootstrap heading <small>Secondary text</small></h6>
 </div>
 ```
 
@@ -487,10 +487,10 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```javascript
 <div class="container">
-	<div class="jumbotron">
-		<h1>Theme example</h1>
-		<p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.</p>
-	</div>
+    <div class="jumbotron">
+        <h1>Theme example</h1>
+        <p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.</p>
+    </div>
 </div>
 ```
 
@@ -500,12 +500,12 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```javascript
 <div class="container">
-	<h2 class="page-header">对齐</h2>
-	<p class="text-left">Left aligned text.</p>
-	<p class="text-center">Center aligned text.</p>
-	<p class="text-right">Right aligned text.</p>
-	<p class="text-justify">Justified text.</p>
-	<p class="text-nowrap">No wrap text.</p>
+    <h2 class="page-header">对齐</h2>
+    <p class="text-left">Left aligned text.</p>
+    <p class="text-center">Center aligned text.</p>
+    <p class="text-right">Right aligned text.</p>
+    <p class="text-justify">Justified text.</p>
+    <p class="text-nowrap">No wrap text.</p>
 </div>
 ```
 
@@ -515,13 +515,13 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```javascript
 <div class="container">
-	<h2 class="alert alert-info">内联列表</h2>
-	<ul class="list-inline">
-		<li>Lorem ipsum</li>
-		<li>Phasellus</li>
-		<li>iaculis Nulla</li>
-		<li>volutpat</li>
-	</ul>
+    <h2 class="alert alert-info">内联列表</h2>
+    <ul class="list-inline">
+        <li>Lorem ipsum</li>
+        <li>Phasellus</li>
+        <li>iaculis Nulla</li>
+        <li>volutpat</li>
+    </ul>
 </div>
 ```
 
@@ -566,42 +566,42 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```javascript
 <table class="table">
-	<tr>
-		<th>我是标题</th>
-		<th>我是标题</th>
-		<th>我是标题</th>
-		<th>我是标题</th>
-	</tr>
-	<tr class="active">
-		<td>我是active</td>
-		<td>我是active</td>
-		<td>我是active</td>
-		<td>我是active</td>
-	</tr>
-	<tr class="success">
-		<td>我是success</td>
-		<td>我是success</td>
-		<td>我是success</td>
-		<td>我是success</td>
-	</tr>
-	<tr class="info">
-		<td>我是info</td>
-		<td>我是info</td>
-		<td>我是info</td>
-		<td>我是info</td>
-	</tr>
-	<tr class="warning">
-		<td>我是warning</td>
-		<td>我是warning</td>
-		<td>我是warning</td>
-		<td>我是warning</td>
-	</tr>
-	<tr class="danger">
-		<td>我是danger</td>
-		<td>我是danger</td>
-		<td>我是danger</td>
-		<td>我是danger</td>
-	</tr>
+    <tr>
+        <th>我是标题</th>
+        <th>我是标题</th>
+        <th>我是标题</th>
+        <th>我是标题</th>
+    </tr>
+    <tr class="active">
+        <td>我是active</td>
+        <td>我是active</td>
+        <td>我是active</td>
+        <td>我是active</td>
+    </tr>
+    <tr class="success">
+        <td>我是success</td>
+        <td>我是success</td>
+        <td>我是success</td>
+        <td>我是success</td>
+    </tr>
+    <tr class="info">
+        <td>我是info</td>
+        <td>我是info</td>
+        <td>我是info</td>
+        <td>我是info</td>
+    </tr>
+    <tr class="warning">
+        <td>我是warning</td>
+        <td>我是warning</td>
+        <td>我是warning</td>
+        <td>我是warning</td>
+    </tr>
+    <tr class="danger">
+        <td>我是danger</td>
+        <td>我是danger</td>
+        <td>我是danger</td>
+        <td>我是danger</td>
+    </tr>
 </table>
 ```
 
@@ -609,32 +609,32 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ### 1.4.1 表单控件
 
-> 单独的表单控件会被自动赋予一些全局样式。所有设置了 .form-control 类的 <input>、<textarea> 和 <select> 元素都将被默认设置宽度属性为 width: 100%;。 将 label 元素和前面提到的控件包裹在 .form-group 中可以获得最好的排列。Bootstrap默认情况下，control-label的文本采用右对齐方式。	.help-block 如果是输入用户名，用户如果输入不符合格式，下面的help-block会提示你输入的信息是不符合规范的
+> 单独的表单控件会被自动赋予一些全局样式。所有设置了 .form-control 类的 <input>、<textarea> 和 <select> 元素都将被默认设置宽度属性为 width: 100%;。 将 label 元素和前面提到的控件包裹在 .form-group 中可以获得最好的排列。Bootstrap默认情况下，control-label的文本采用右对齐方式。.help-block 如果是输入用户名，用户如果输入不符合格式，下面的help-block会提示你输入的信息是不符合规范的
 
 > form-group      包裹表单组
 >
 > form-control    给单个表单
 >
-> control-label	给label标签（使文字右对齐）
+> control-label    给label标签（使文字右对齐）
 >
-> .help-block	给表单下面的span
+> .help-block    给表单下面的span
 >
 > 注意：只有正确设置了 type 属性的输入控件才能被赋予正确的样式。
 
 ```javascript
 <form action="">
-	<div class="form-group">
-		<label for="email1">Email address: </label><input type="text" id="email1" class="form-control" placeholder="email">
-	</div>
-	<div class="form-group">
-		<label for="password1">Password: </label><input type="text" id="password1" class="form-control"	placeholder="Password">
-	</div>
-	<div class="checkbox">
-		<label>
-			<input type="checkbox"> Check me out
-		</label>
-	</div>
-	<button type="submit" class="btn btn-default">Submit</button>
+    <div class="form-group">
+        <label for="email1">Email address: </label><input type="text" id="email1" class="form-control" placeholder="email">
+    </div>
+    <div class="form-group">
+        <label for="password1">Password: </label><input type="text" id="password1" class="form-control"    placeholder="Password">
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox"> Check me out
+        </label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
 
 </form>
 ```
@@ -651,13 +651,13 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```javascript
 <form action=""  class="form-inline">
-	<h2 class="alert alert-info">内联表单</h2>
-	<div class="form-group">
-		<label>Email address: <input type="text"  class="form-control" placeholder="Email" ></label>
-	</div>
-	<div class="form-group">
-		<label>Password: <input type="text" class="form-control" placeholder="Password"></label>
-	</div>
+    <h2 class="alert alert-info">内联表单</h2>
+    <div class="form-group">
+        <label>Email address: <input type="text"  class="form-control" placeholder="Email" ></label>
+    </div>
+    <div class="form-group">
+        <label>Password: <input type="text" class="form-control" placeholder="Password"></label>
+    </div>
 </form>
 ```
 
@@ -675,12 +675,12 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```javascript
 <form class="form-inline">
-	<div class="input-group">
-		<div class="input-group-addon">$</div>
-		<input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
-		<div class="input-group-addon">.00</div>
-	</div>
-	<button type="submit" class="btn btn-primary">Transfer cash</button>
+    <div class="input-group">
+        <div class="input-group-addon">$</div>
+        <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+        <div class="input-group-addon">.00</div>
+    </div>
+    <button type="submit" class="btn btn-primary">Transfer cash</button>
 </form>
 ```
 
@@ -692,13 +692,13 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```javascript
 <form action="" class="form-horizontal">
-	<h2 class="alert alert-info">水平表单</h2>
-	<div class="form-group">
-		<label for="email3" class="control-label col-sm-2">Email address: </label>
-		<div class="col-sm-10">
-			<input type="text" id="email3" class="form-control" placeholder="email">
-		</div>
-	</div>
+    <h2 class="alert alert-info">水平表单</h2>
+    <div class="form-group">
+        <label for="email3" class="control-label col-sm-2">Email address: </label>
+        <div class="col-sm-10">
+            <input type="text" id="email3" class="form-control" placeholder="email">
+        </div>
+    </div>
 </form>
 ```
 
@@ -708,21 +708,21 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```javascript
 <form action="">
-	<h2 class="alert alert-info">单选框</h2>
-	<div class="radio">
-		<label>
-			<input type="radio" name="radio">radio 
-		</label>
-		<label>
-			<input type="radio" name="radio">radio 
-		</label>
-		<label>
-			<input type="radio" name="radio">radio 
-		</label>
-		<label>
-			<input type="radio" name="radio">radio 
-		</label>
-	</div>
+    <h2 class="alert alert-info">单选框</h2>
+    <div class="radio">
+        <label>
+            <input type="radio" name="radio">radio 
+        </label>
+        <label>
+            <input type="radio" name="radio">radio 
+        </label>
+        <label>
+            <input type="radio" name="radio">radio 
+        </label>
+        <label>
+            <input type="radio" name="radio">radio 
+        </label>
+    </div>
 </form>
 ```
 
@@ -730,18 +730,18 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```javascript
 <form action="">
-	<h2 class="alert alert-info">复选框</h2>
-	<div class="checkbox">
-		<label>
-			<input type="checkbox">Option 
-		</label>
-		<label>
-			<input type="checkbox">Option 
-		</label>
-		<label>
-			<input type="checkbox">Option 
-		</label>
-	</div>
+    <h2 class="alert alert-info">复选框</h2>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox">Option 
+        </label>
+        <label>
+            <input type="checkbox">Option 
+        </label>
+        <label>
+            <input type="checkbox">Option 
+        </label>
+    </div>
 </form>
 ```
 
@@ -751,13 +751,13 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```html
 <form action="">
-	<select class="form-control">
-		<option>1</option>
-    	<option>2</option>
-    	<option>3</option>
-    	<option>4</option>
-    	<option>5</option>
-	</select>
+    <select class="form-control">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+    </select>
 </form>
 ```
 
@@ -765,13 +765,13 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```javascript
 <form action="">
-  	<select multiple class="form-control">
+      <select multiple class="form-control">
         <option>1</option>
         <option>2</option>
         <option>3</option>
         <option>4</option>
         <option>5</option>
-	</select>
+    </select>
 </form>
 ```
 
@@ -781,11 +781,11 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```javascript
 <form action="" class="form-inline">
-  	<p class="form-control-static">Hello Bootstrap！</p>
-	<div class="form-group">
- 		<input type="text" class="form-control" placeholder="Hello Bootstrap">
-    	<button type="submit" class="btn btn-default">submit</button>
-	</div>
+      <p class="form-control-static">Hello Bootstrap！</p>
+    <div class="form-group">
+         <input type="text" class="form-control" placeholder="Hello Bootstrap">
+        <button type="submit" class="btn btn-default">submit</button>
+    </div>
 </form>
 ```
 
@@ -801,19 +801,19 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```javascript
 <form action="" class="form-inline">
-	<div class="form-group has-success">
-		<label>Input with success: <input type="text" class="form-control" placeholder="success"></label>
-		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-	</div>
+    <div class="form-group has-success">
+        <label>Input with success: <input type="text" class="form-control" placeholder="success"></label>
+        <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+    </div>
 
-	<div class="form-group has-warning">
-		<label>Input with warning: <input type="text" class="form-control" placeholder="warning"></label>
-		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-	</div>
-	<div class="form-group has-error">
-		<label>Input with error: <input type="text" class="form-control" placeholder="error"></label>
-		<span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
-	</div>
+    <div class="form-group has-warning">
+        <label>Input with warning: <input type="text" class="form-control" placeholder="warning"></label>
+        <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+    </div>
+    <div class="form-group has-error">
+        <label>Input with error: <input type="text" class="form-control" placeholder="error"></label>
+        <span class="help-block">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+    </div>
 </form>
 ```
 
@@ -829,33 +829,33 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```javascript
 <form action="">
-	<div class="form-group has-success has-feedback">
-		<label class="control-label" for="inputSuccess2">Input with success</label>
-		<input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
-		<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
-		<span id="inputSuccess2Status" class="sr-only">(success)</span>  <!--额外的隐藏的文本应包含在 .sr-only 类中-->
-	</div>
-	<div class="form-group has-warning has-feedback">
-		<label class="control-label" for="inputWarning2">Input with warning</label>
-		<input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
-		<span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
-		<span id="inputWarning2Status" class="sr-only">(warning)</span>
-	</div>
-	<div class="form-group has-error has-feedback">
-		<label class="control-label" for="inputError2">Input with error</label>
-		<input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status">
-		<span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
-		<span id="inputError2Status" class="sr-only">(error)</span>
-	</div>
-	<div class="form-group has-success has-feedback">
-		<label class="control-label" for="inputGroupSuccess1">Input group with success</label>
-		<div class="input-group">
-			<span class="input-group-addon">@</span>
-			<input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
-		</div>
-		<span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
-		<span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
-	</div>
+    <div class="form-group has-success has-feedback">
+        <label class="control-label" for="inputSuccess2">Input with success</label>
+        <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+        <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+        <span id="inputSuccess2Status" class="sr-only">(success)</span>  <!--额外的隐藏的文本应包含在 .sr-only 类中-->
+    </div>
+    <div class="form-group has-warning has-feedback">
+        <label class="control-label" for="inputWarning2">Input with warning</label>
+        <input type="text" class="form-control" id="inputWarning2" aria-describedby="inputWarning2Status">
+        <span class="glyphicon glyphicon-warning-sign form-control-feedback" aria-hidden="true"></span>
+        <span id="inputWarning2Status" class="sr-only">(warning)</span>
+    </div>
+    <div class="form-group has-error has-feedback">
+        <label class="control-label" for="inputError2">Input with error</label>
+        <input type="text" class="form-control" id="inputError2" aria-describedby="inputError2Status">
+        <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+        <span id="inputError2Status" class="sr-only">(error)</span>
+    </div>
+    <div class="form-group has-success has-feedback">
+        <label class="control-label" for="inputGroupSuccess1">Input group with success</label>
+        <div class="input-group">
+            <span class="input-group-addon">@</span>
+            <input type="text" class="form-control" id="inputGroupSuccess1" aria-describedby="inputGroupSuccess1Status">
+        </div>
+        <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+        <span id="inputGroupSuccess1Status" class="sr-only">(success)</span>
+    </div>
 </form>
 ```
 
@@ -867,9 +867,9 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```javascript
 <form action="">
-	<input  class="form-control input-lg" type="text" placeholder=".input-lg">
-	<input class="form-control" type="text" placeholder="Default input">
-	<input class="form-control input-sm" type="text" placeholder=".input-sm">
+    <input  class="form-control input-lg" type="text" placeholder=".input-lg">
+    <input class="form-control" type="text" placeholder="Default input">
+    <input class="form-control input-sm" type="text" placeholder=".input-sm">
 </form>
 ```
 
@@ -879,18 +879,18 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```javascript
 <form class="form-horizontal">
-	<div class="form-group form-group-lg">
-		<label class="col-sm-3 control-label" for="formGroupInputLarge">Large label</label>
-		<div class="col-sm-9">
-			<input class="form-control" type="text" id="formGroupInputLarge" placeholder="Large input">
-		</div>
-	</div>
-	<div class="form-group form-group-sm">
-		<label class="col-sm-2 control-label" for="formGroupInputSmall">Small label</label>
-		<div class="col-sm-10">
-			<input class="form-control" type="text" id="formGroupInputSmall" placeholder="Small input">
-		</div>
-	</div>
+    <div class="form-group form-group-lg">
+        <label class="col-sm-3 control-label" for="formGroupInputLarge">Large label</label>
+        <div class="col-sm-9">
+            <input class="form-control" type="text" id="formGroupInputLarge" placeholder="Large input">
+        </div>
+    </div>
+    <div class="form-group form-group-sm">
+        <label class="col-sm-2 control-label" for="formGroupInputSmall">Small label</label>
+        <div class="col-sm-10">
+            <input class="form-control" type="text" id="formGroupInputSmall" placeholder="Small input">
+        </div>
+    </div>
 </form>
 ```
 
@@ -900,17 +900,17 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```javascript
 <form action="">
-	<div class="row">
-		<div class="col-xs-2">
-			<input type="text" class="form-control" placeholder=".col-xs-2">
-		</div>
-		<div class="col-xs-3">
-			<input type="text" class="form-control" placeholder=".col-xs-3">
-		</div>
-		<div class="col-xs-4">
-			<input type="text" class="form-control" placeholder=".col-xs-4">
-		</div>
-	</div>
+    <div class="row">
+        <div class="col-xs-2">
+            <input type="text" class="form-control" placeholder=".col-xs-2">
+        </div>
+        <div class="col-xs-3">
+            <input type="text" class="form-control" placeholder=".col-xs-3">
+        </div>
+        <div class="col-xs-4">
+            <input type="text" class="form-control" placeholder=".col-xs-4">
+        </div>
+    </div>
  </form>
 ```
 
@@ -965,9 +965,9 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```html
 <div class="btn-group" role="group" aria-label="...">
-	<button type="button" class="btn btn-default">Left</button>
-	<button type="button" class="btn btn-default">Middle</button>
-	<button type="button" class="btn btn-default">Right</button>
+    <button type="button" class="btn btn-default">Left</button>
+    <button type="button" class="btn btn-default">Middle</button>
+    <button type="button" class="btn btn-default">Right</button>
 </div>
 ```
 
@@ -977,20 +977,20 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```html
 <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-	<div class="btn-group" role="group" aria-label="First group">
-		<button type="button" class="btn btn-default">1</button>
-		<button type="button" class="btn btn-default">2</button>
-		<button type="button" class="btn btn-default">3</button>
-		<button type="button" class="btn btn-default">4</button>
-	</div>
-	<div class="btn-group" role="group" aria-label="Second group">
-		<button type="button" class="btn btn-default">5</button>
-		<button type="button" class="btn btn-default">6</button>
-		<button type="button" class="btn btn-default">7</button>
-	</div>
-	<div class="btn-group" role="group" aria-label="Third group">
-		<button type="button" class="btn btn-default">8</button>
-	</div>
+    <div class="btn-group" role="group" aria-label="First group">
+        <button type="button" class="btn btn-default">1</button>
+        <button type="button" class="btn btn-default">2</button>
+        <button type="button" class="btn btn-default">3</button>
+        <button type="button" class="btn btn-default">4</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="Second group">
+        <button type="button" class="btn btn-default">5</button>
+        <button type="button" class="btn btn-default">6</button>
+        <button type="button" class="btn btn-default">7</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="Third group">
+        <button type="button" class="btn btn-default">8</button>
+    </div>
 </div>
 ```
 
@@ -1000,29 +1000,29 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```html
 <div class="bs-example" data-example-id="button-group-sizing">
-	<div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
-		<button type="button" class="btn btn-default">Left</button>
-		<button type="button" class="btn btn-default">Middle</button>
-		<button type="button" class="btn btn-default">Right</button>
-	</div>
-	<br>
-	<div class="btn-group" role="group" aria-label="Default button group">
-		<button type="button" class="btn btn-default">Left</button>
-		<button type="button" class="btn btn-default">Middle</button>
-		<button type="button" class="btn btn-default">Right</button>
-	</div>
-	<br>
-	<div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
-		<button type="button" class="btn btn-default">Left</button>
-		<button type="button" class="btn btn-default">Middle</button>
-		<button type="button" class="btn btn-default">Right</button>
-	</div>
-	<br>
-	<div class="btn-group btn-group-xs" role="group" aria-label="Extra-small button group">
-		<button type="button" class="btn btn-default">Left</button>
-		<button type="button" class="btn btn-default">Middle</button>
-		<button type="button" class="btn btn-default">Right</button>
-	</div>
+    <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+        <button type="button" class="btn btn-default">Left</button>
+        <button type="button" class="btn btn-default">Middle</button>
+        <button type="button" class="btn btn-default">Right</button>
+    </div>
+    <br>
+    <div class="btn-group" role="group" aria-label="Default button group">
+        <button type="button" class="btn btn-default">Left</button>
+        <button type="button" class="btn btn-default">Middle</button>
+        <button type="button" class="btn btn-default">Right</button>
+    </div>
+    <br>
+    <div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+        <button type="button" class="btn btn-default">Left</button>
+        <button type="button" class="btn btn-default">Middle</button>
+        <button type="button" class="btn btn-default">Right</button>
+    </div>
+    <br>
+    <div class="btn-group btn-group-xs" role="group" aria-label="Extra-small button group">
+        <button type="button" class="btn btn-default">Left</button>
+        <button type="button" class="btn btn-default">Middle</button>
+        <button type="button" class="btn btn-default">Right</button>
+    </div>
 </div>
 ```
 
@@ -1058,8 +1058,8 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```css
 .img{
-	padding-top: 56%;  /*图片的高宽比例*/
-	background: url("../images/1366.jpg") no-repeat center/cover;
+    padding-top: 56%;  /*图片的高宽比例*/
+    background: url("../images/1366.jpg") no-repeat center/cover;
 }
 ```
 
@@ -1102,10 +1102,10 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```html
 <button type="button" class="btn btn-default" aria-label="Left Align">
-	<span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+    <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
 </button>
 <button type="button" class="btn btn-default">
-	<span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+    <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
 </button>
 ```
 
@@ -1115,8 +1115,8 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```html
 <div class="alert alert-danger" role="alert">
-	<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
-	Enter a valid email address
+    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+    Enter a valid email address
 </div>
 ```
 
@@ -1144,19 +1144,19 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```html
 <div class="dropdown">
-	<button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
-			aria-haspopup="true" aria-expanded="true">
-		Dropdown <span class="caret"></span>
-	</button>
-	<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-		<li class="dropdown-header">Action</li>
-		<li  class="divider" role="separator"></li>
-		<li><a href="#">Another action</a></li>
-		<li  class="divider" role="separator"></li>
-		<li><a href="#">Something else here</a></li>
-		<li  class="divider" role="separator"></li>
-		<li><a href="#">Separated link</a></li>
-	</ul>
+    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="true">
+        Dropdown <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li class="dropdown-header">Action</li>
+        <li  class="divider" role="separator"></li>
+        <li><a href="#">Another action</a></li>
+        <li  class="divider" role="separator"></li>
+        <li><a href="#">Something else here</a></li>
+        <li  class="divider" role="separator"></li>
+        <li><a href="#">Separated link</a></li>
+    </ul>
 </div>
 ```
 
@@ -1166,19 +1166,19 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```html
 <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-	<button type="button" class="btn btn-default">1</button>
-	<button type="button" class="btn btn-default">2</button>
+    <button type="button" class="btn btn-default">1</button>
+    <button type="button" class="btn btn-default">2</button>
 
-	<div class="btn-group" role="group">
-		<button id="btnGroupDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			Dropdown
-			<span class="caret"></span>
-		</button>
-		<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-			<li><a href="#">Dropdown link</a></li>
-			<li><a href="#">Dropdown link</a></li>
-		</ul>
-	</div>
+    <div class="btn-group" role="group">
+        <button id="btnGroupDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <li><a href="#">Dropdown link</a></li>
+            <li><a href="#">Dropdown link</a></li>
+        </ul>
+    </div>
 </div>
 ```
 
@@ -1190,18 +1190,18 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```html
 <div class="btn-group-vertical" role="group" aria-label="Vertical button group">
-	<button type="button" class="btn btn-default">Button</button>
-	<div class="btn-group" role="group">
-		<button id="btnGroupVerticalDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			Dropdown
-			<span class="caret"></span>
-		</button>
-		<ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
-			<li><a href="#">Dropdown link</a></li>
-			<li><a href="#">Dropdown link</a></li>
-		</ul>
-	</div>
-	<button type="button" class="btn btn-default">Button</button>
+    <button type="button" class="btn btn-default">Button</button>
+    <div class="btn-group" role="group">
+        <button id="btnGroupVerticalDrop1" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="btnGroupVerticalDrop1">
+            <li><a href="#">Dropdown link</a></li>
+            <li><a href="#">Dropdown link</a></li>
+        </ul>
+    </div>
+    <button type="button" class="btn btn-default">Button</button>
 </div>
 ```
 
@@ -1211,9 +1211,9 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```html
 <div class="btn-group-justified" role="group" aria-label="Justified button group">
-	<a href="#" class="btn btn-default" role="button">Left</a>
-	<a href="#" class="btn btn-default" role="button">Middle</a>
-	<a href="#" class="btn btn-default" role="button">Right</a>
+    <a href="#" class="btn btn-default" role="button">Left</a>
+    <a href="#" class="btn btn-default" role="button">Middle</a>
+    <a href="#" class="btn btn-default" role="button">Right</a>
 </div>
 ```
 
@@ -1226,7 +1226,7 @@ col-md-pull-    在中等尺寸下向左拉...网格
       <span class="caret"></span>
     </button>
     <ul class="dropdown-menu">
-		<li><a href="#">Action</a></li>
+        <li><a href="#">Action</a></li>
         <li><a href="#">Another action</a></li>
         <li><a href="#">Something else here</a></li>
         <li role="separator" class="divider"></li>
@@ -1241,21 +1241,21 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```html
 <ul class="pagination">
-	<li>
-		<a href="#" aria-label="Previous">
-			<span aria-hidden="true">&laquo;</span>
-		</a>
-	</li>
-	<li class="active"><a href="#">1</a></li>
-	<li><a href="#">2</a></li>
-	<li><a href="#">3</a></li>
-	<li><a href="#">4</a></li>
-	<li><a href="#">5</a></li>
-	<li>
-		<a href="#" aria-label="Next">
-			<span aria-hidden="true">&raquo;</span>
-		</a>
-	</li>
+    <li>
+        <a href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+        </a>
+    </li>
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+        <a href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+        </a>
+    </li>
 </ul>
 
 ```
@@ -1268,15 +1268,15 @@ col-md-pull-    在中等尺寸下向左拉...网格
 <a href="#">Inbox <span class="badge">42</span></a>
 
 <button class="btn btn-primary" type="button">
-	Messages <span class="badge">4</span>
+    Messages <span class="badge">4</span>
 </button>
 <!--nav nav-pills 变成胶囊式导航栏-->
 <ul class="nav nav-pills" role="tablist">
-	<li role="presentation" class="active">
-		<a href="#">Home <span class="badge">42</span></a>
-	</li>
-	<li role="presentation"><a href="#">Profile <span class="badge">10</span></a></li>
-	<li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
+    <li role="presentation" class="active">
+        <a href="#">Home <span class="badge">42</span></a>
+    </li>
+    <li role="presentation"><a href="#">Profile <span class="badge">10</span></a></li>
+    <li role="presentation"><a href="#">Messages <span class="badge">3</span></a></li>
  </ul>
 ```
 
@@ -1288,17 +1288,17 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```html
 <div class="thumbnail">
-	<img src="1.jpg">
-	<div class="caption">
-		<h3>Thumbnail label</h3>
-		<p>
-		    Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-		</p>
-		<p>
-		    <a href="#" class="btn btn-primary" role="button">Button</a> 
-		    <a href="#" class="btn btn-default" role="button">Button</a>
-		</p>
-	</div>
+    <img src="1.jpg">
+    <div class="caption">
+        <h3>Thumbnail label</h3>
+        <p>
+            Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+        </p>
+        <p>
+            <a href="#" class="btn btn-primary" role="button">Button</a> 
+            <a href="#" class="btn btn-default" role="button">Button</a>
+        </p>
+    </div>
 </div>
 ```
 
@@ -1316,16 +1316,16 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```html
 <div class="media">
-	<div class="media-left">
-		<a href="#">
-			<img class="media-object" src="1.jpg">
-		</a>
-	</div>
-	<div class="media-body">
-		<h4 class="media-heading">Bottom aligned media</h4>
-		<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-		<p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-	</div>
+    <div class="media-left">
+        <a href="#">
+            <img class="media-object" src="1.jpg">
+        </a>
+    </div>
+    <div class="media-body">
+        <h4 class="media-heading">Bottom aligned media</h4>
+        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+        <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    </div>
 </div>
 ```
 
@@ -1357,24 +1357,24 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```html
 <div class="progress">
-	<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%
-		<span class="sr-only">40% Complete (success)</span>
-	</div>
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">40%
+        <span class="sr-only">40% Complete (success)</span>
+    </div>
 </div>
 <div class="progress">
-	<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-		<span class="sr-only">20% Complete</span>
-	</div>
+    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+        <span class="sr-only">20% Complete</span>
+    </div>
 </div>
 <div class="progress">
-	<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-		<span class="sr-only">60% Complete (warning)</span>
-	</div>
+    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+        <span class="sr-only">60% Complete (warning)</span>
+    </div>
 </div>
 <div class="progress">
-	<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-		<span class="sr-only">80% Complete (danger)</span>
-	</div>
+    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+        <span class="sr-only">80% Complete (danger)</span>
+    </div>
 </div>
 ```
 
@@ -1386,9 +1386,9 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```html
 <div class="progress">
-	<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-		<span class="sr-only">40% Complete (success)</span>
-	</div>
+    <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+        <span class="sr-only">40% Complete (success)</span>
+    </div>
 </div>
 ```
 
@@ -1398,15 +1398,15 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```html
 <div class="progress">
-	<div class="progress-bar progress-bar-success" style="width: 35%">35%
-		<span class="sr-only">35% Complete (success)</span>
-	</div>
-	<div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">20%
-		<span class="sr-only">20% Complete (warning)</span>
-	</div>
-	<div class="progress-bar progress-bar-danger" style="width: 10%">
-		<span class="sr-only">10% Complete (danger)</span>10%
-	</div>
+    <div class="progress-bar progress-bar-success" style="width: 35%">35%
+        <span class="sr-only">35% Complete (success)</span>
+    </div>
+    <div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 20%">20%
+        <span class="sr-only">20% Complete (warning)</span>
+    </div>
+    <div class="progress-bar progress-bar-danger" style="width: 10%">
+        <span class="sr-only">10% Complete (danger)</span>10%
+    </div>
 </div>
 ```
 
@@ -1420,16 +1420,16 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```
 <div class="media">
-	<div class="media-left">
-		<a href="#">
-			<img class="media-object" src="1.jpg">
-		</a>
-	</div>
-	<div class="media-body">
-		<h4 class="media-heading">Top aligned media</h4>
-		<p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-		<p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.				</p>
-	</div>
+    <div class="media-left">
+        <a href="#">
+            <img class="media-object" src="1.jpg">
+        </a>
+    </div>
+    <div class="media-body">
+        <h4 class="media-heading">Top aligned media</h4>
+        <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+        <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.                </p>
+    </div>
 </div>
 ```
 
@@ -1453,10 +1453,10 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```html
 <ul class="list-group">
-	<li class="list-group-item">
-		Cras justo odio
-		<span class="badge">14</span>
-	</li>
+    <li class="list-group-item">
+        Cras justo odio
+        <span class="badge">14</span>
+    </li>
 </ul>
 ```
 
@@ -1466,11 +1466,11 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
   ```html
   <div class="list-group">
-	  <a href="#" class="list-group-item active">Cras justo odio<span class="badge">14</span></a>
-	  <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-	  <a href="#" class="list-group-item">Morbi leo risus</a>
-	  <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-	  <a href="#" class="list-group-item">Vestibulum at eros</a>
+      <a href="#" class="list-group-item active">Cras justo odio<span class="badge">14</span></a>
+      <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+      <a href="#" class="list-group-item">Morbi leo risus</a>
+      <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+      <a href="#" class="list-group-item">Vestibulum at eros</a>
   </div>
   ```
 
@@ -1480,11 +1480,11 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
   ```html
   <div class="list-group">
-	  <button type="button" class="list-group-item">Cras justo odio</button>
-	  <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
-	  <button type="button" class="list-group-item">Morbi leo risus</button>
-	  <button type="button" class="list-group-item">Porta ac consectetur ac</button>
-	  <button type="button" class="list-group-item">Vestibulum at eros</button>
+      <button type="button" class="list-group-item">Cras justo odio</button>
+      <button type="button" class="list-group-item">Dapibus ac facilisis in</button>
+      <button type="button" class="list-group-item">Morbi leo risus</button>
+      <button type="button" class="list-group-item">Porta ac consectetur ac</button>
+      <button type="button" class="list-group-item">Vestibulum at eros</button>
   </div>
   ```
 
@@ -1492,18 +1492,18 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
   ```html
   <div class="list-group">
-	  <a href="#" class="list-group-item active">
-		  <h4 class="list-group-item-heading">List group item heading</h4>
-		  <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-	  </a>
-	  <a href="#" class="list-group-item">
-		  <h4 class="list-group-item-heading">List group item heading</h4>
-		  <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-	  </a>
-	  <a href="#" class="list-group-item">
-		  <h4 class="list-group-item-heading">List group item heading</h4>
-		  <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-	  </a>
+      <a href="#" class="list-group-item active">
+          <h4 class="list-group-item-heading">List group item heading</h4>
+          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+      </a>
+      <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">List group item heading</h4>
+          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+      </a>
+      <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading">List group item heading</h4>
+          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+      </a>
   </div>
   ```
 
@@ -1513,43 +1513,43 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
   ```html
   <div class="panel panel-default">
-	  <!-- Default panel contents -->
-	  <div class="panel-heading">Panel heading</div>
-	  <div class="panel-body">
-		  <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-	  </div>
+      <!-- Default panel contents -->
+      <div class="panel-heading">Panel heading</div>
+      <div class="panel-body">
+          <p>Some default panel content here. Nulla vitae elit libero, a pharetra augue. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      </div>
 
-	  <!-- Table -->
-	  <table class="table">
-		  <thead>
-		  <tr>
-			  <th>#</th>
-			  <th>First Name</th>
-			  <th>Last Name</th>
-			  <th>Username</th>
-		  </tr>
-		  </thead>
-		  <tbody>
-		  <tr>
-			  <th scope="row">1</th>
-			  <td>Mark</td>
-			  <td>Otto</td>
-			  <td>@mdo</td>
-		  </tr>
-		  <tr>
-			  <th scope="row">2</th>
-			  <td>Jacob</td>
-			  <td>Thornton</td>
-			  <td>@fat</td>
-		  </tr>
-		  <tr>
-			  <th scope="row">3</th>
-			  <td>Larry</td>
-			  <td>the Bird</td>
-			  <td>@twitter</td>
-		  </tr>
-		  </tbody>
-	  </table>
+      <!-- Table -->
+      <table class="table">
+          <thead>
+          <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+          </tr>
+          <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+          </tr>
+          <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+          </tr>
+          </tbody>
+      </table>
   </div>
   ```
 
@@ -1573,11 +1573,11 @@ col-md-pull-    在中等尺寸下向左拉...网格
 ```html
 <a href="login-form.html" data-toggle="modal" data-target="#login-modal">登录</a>
 <div class="modal fade" id="login-modal" tabindex="-1" data-backdrop="false">
-	<div class="modal-dialog">
-		<div class="modal-content">
+    <div class="modal-dialog">
+        <div class="modal-content">
 
-		</div>
-	</div>
+        </div>
+    </div>
 </div>
 ```
 
@@ -1623,9 +1623,9 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```html
 <ul class="nav nav-pills">
-	<li role="presentation" class="active"><a href="#">Home</a></li>
-	<li role="presentation"><a href="#">Profile</a></li>
-	<li role="presentation"><a href="#">Messages</a></li>
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="#">Profile</a></li>
+    <li role="presentation"><a href="#">Messages</a></li>
 </ul>
 ```
 
@@ -1633,9 +1633,9 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```html
 <ul class="nav nav-pills nav-stacked">
-	<li role="presentation" class="active"><a href="#">Home</a></li>
-	<li role="presentation"><a href="#">Profile</a></li>
-	<li role="presentation"><a href="#">Messages</a></li>
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="#">Profile</a></li>
+    <li role="presentation"><a href="#">Messages</a></li>
 </ul>
 ```
 
@@ -1643,15 +1643,15 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```html
 <ul class="nav nav-pills nav-stacked nav-justified">
-	<li role="presentation" class="active"><a href="#">Home</a></li>
-	<li role="presentation"><a href="#">Profile</a></li>
-	<li role="presentation"><a href="#">Messages</a></li>
+    <li role="presentation" class="active"><a href="#">Home</a></li>
+    <li role="presentation"><a href="#">Profile</a></li>
+    <li role="presentation"><a href="#">Messages</a></li>
 </ul>
 ```
 
 ## 1.2 导航栏
 
-- 导航栏也是基于nav类	导航栏样式(给nav标签)：
+- 导航栏也是基于nav类    导航栏样式(给nav标签)：
 
     > navbar-default  默认样式
     >
@@ -1678,7 +1678,7 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ### 1.2.2 菜单栏
 
-- 基于nav	 navbar-nav类
+- 基于nav     navbar-nav类
 
 - 被激活状态.active
 
@@ -1719,7 +1719,7 @@ col-md-pull-    在中等尺寸下向左拉...网格
   <div class="form-group">
     <input type="text" class="form-control" placeholder="search">
     <button type="submit">
-    	<span class="glyphicon glyphicon-search"></span>
+        <span class="glyphicon glyphicon-search"></span>
     </button>
   </div>
 </form>
@@ -1745,9 +1745,9 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 > 默认不固定
 >
-> navbar-fixed-top	固定在头部
+> navbar-fixed-top    固定在头部
 >
-> navbar-fixed-bottom	固定在底部
+> navbar-fixed-bottom    固定在底部
 
 ### 1.2.7 折叠导航栏
 
@@ -1755,11 +1755,11 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```html
 <div class="navbar-header">
-	<button class="navbar-toggle" data-toggle="collapse" data-target="#responsive-navbar"
+    <button class="navbar-toggle" data-toggle="collapse" data-target="#responsive-navbar"
                         aria-haspopup="true" aria-expanded="false">
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
-		<span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
     </button>
     <a href="" class="navbar-brand"><strong>Logo</strong></a>
 </div>
