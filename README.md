@@ -1686,24 +1686,23 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
   ```html
   <ul class="nav navbar-nav">
-    <li class="active"><a href="">Home</a></li>
-    <li><a href="">About</a></li>
-    <li><a href="">Contact</a></li>
-    <li>
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-         aria-expanded="false">Dropdown <span class="caret"></span></a>
-      <ul class="dropdown-menu">
-        <li><a href="#">Action</a></li>
-        <li class="divider"></li>
-        <li><a href="#">Another action</a></li>
-        <li class="divider"></li>
-        <li><a href="#">Something else here</a></li>
-        <li class="divider"></li>
-        <li><a href="#">Separated link</a></li>
-        <li class="divider"></li>
-        <li><a href="#">One more separated link</a></li>
-      </ul>
-    </li>
+      <li class="active"><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Contact</a></li>
+      <li>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Another action</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Something else here</a></li>
+              <li class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+          </ul>
+      </li>
   </ul>
   ```
 
@@ -1716,12 +1715,12 @@ col-md-pull-    在中等尺寸下向左拉...网格
 
 ```html
 <form action="" class="navbar-form navbar-left">
-  <div class="form-group">
-    <input type="text" class="form-control" placeholder="search">
-    <button type="submit">
-        <span class="glyphicon glyphicon-search"></span>
-    </button>
-  </div>
+    <div class="form-group">
+        <input type="text" class="form-control" placeholder="search">
+        <button type="submit">
+            <span class="glyphicon glyphicon-search"></span>
+        </button>
+    </div>
 </form>
 ```
 
